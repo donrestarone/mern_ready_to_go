@@ -1,5 +1,10 @@
 # MERN stack ready to go
 
+## Features ✨
+* hot code reloading - see your changes instantly ✅
+* test frameworks included - TDD friendly ✅
+* one-command development environment ✅
+
 ## install system dependencies
 setup nodemon globally
 
@@ -62,12 +67,27 @@ npm run dev
 ## ready? set? Go!
 
 * visit http://localhost:3333/ to see the server in action
-* visit http://localhost:3333/ to see the client in action
+* visit http://localhost:5173/ to see the client in action
 
 ## included routes
 
 * '/' => homepage
 * '/users' => users resource
+
+## running tests
+
+### client
+
+``` bash
+cd client
+npm run test
+```
+### server
+runs the test server on port 3334 and runs tests against it
+``` bash
+cd client
+npm run test
+```
 
 ## useful scripts
 
@@ -86,3 +106,4 @@ npm install express -w server
 * Mongoose schemaless: https://stackoverflow.com/questions/30812961/saving-unstructured-data-in-mongoose
 * MERN stack folder structure and organization: https://medium.com/@gecno/node-js-express-mongodb-and-mongoose-understanding-the-mvc-model-678952631ea3
 * Packaging frontend and backend in a monorepo: https://www.dusanstam.com/posts/react-express-monorepo
+* testing express.js apps: https://dev.to/lukekyl/testing-your-express-js-backend-server-3ae6
