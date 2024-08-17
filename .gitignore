@@ -1,0 +1,3 @@
+# ignore DS store on mac
+**/.DS_Store
+/node_modules

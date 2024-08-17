@@ -1,0 +1,35 @@
+{
+  "name": "mern_ready_to_go",
+  "version": "1.0.0",
+  "description": "a MERN stack template to help you hit the ground running in developing your web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/donrestarone/mern_ready_to_go.git"
+  },
+  "keywords": [
+    "MERN",
+    "MongoDB",
+    "Express.js",
+    "React",
+    "Node.js"
+  ],
+  "author": "donrestarone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donrestarone/mern_ready_to_go/issues"
+  },
+  "homepage": "https://github.com/donrestarone/mern_ready_to_go#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
