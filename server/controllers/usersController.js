@@ -1,5 +1,7 @@
 
 const User = require('../models/user');
+const logger = require('../utilities/logger');
+
 // Create a new user
 exports.createUser = async (req, res) => {
  const { name, email, passwordHash } = req.body;
@@ -14,6 +16,7 @@ exports.createUser = async (req, res) => {
 
 // Get all Users
 exports.getAllUsers = async (req, res) => {
+  logger.info('processing /users from usersController');
  try {
    const user = await User.find();
    res.json(user);
