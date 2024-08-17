@@ -23,5 +23,5 @@ visit http://localhost:3333/ to see the app in action!
 
 ## included routes
 
-'/' => homepage
-'/users' => users resource
+* '/' => homepage
+* '/users' => users resource
