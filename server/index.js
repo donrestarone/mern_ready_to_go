@@ -1,3 +1,4 @@
+const logger = require('./utilities/logger')
 const express = require('express')
 const cors = require('cors'); 
 const userRoutes = require('./routes/userRoutes')
@@ -10,19 +11,14 @@ const User = require('./models/user')
 
 mongoose.connect(dbUrl)
   .then(() => {
-    console.log('Connected to MongoDB');
+    logger.info('Connected to MongoDB');
   })
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
   });
 
 mongoose.connection.listDatabases().then((databases) => {
-  console.log(databases)
-})
-
-// testing user model:
-const userFromDb = User.findOne({ name: 'Foo' }).then (user => {
-  console.log(user, 'loaded user')
+  logger.info('available databases', databases);
 })
 
 app.use(cors())
@@ -34,5 +30,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`MERN RTG listening on port ${port}`)
+  logger.info(`MERN RTG listening on port ${port}`);
 })
