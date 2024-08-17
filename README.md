@@ -62,12 +62,23 @@ npm run dev
 ## ready? set? Go!
 
 * visit http://localhost:3333/ to see the server in action
-* visit http://localhost:3333/ to see the client in action
+* visit http://localhost:5173/ to see the client in action
 
 ## included routes
 
 * '/' => homepage
 * '/users' => users resource
+
+## running tests
+
+### client
+
+``` bash
+cd client
+npm run test
+```
+### server
+
 
 ## useful scripts
 
