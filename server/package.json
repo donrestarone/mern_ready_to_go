@@ -4,13 +4,12 @@
   "description": "a MERN stack template to help you hit the ground running in developing your web application",
   "main": "index.js",
   "scripts": {
-    "server": "npm run dev -w server",
-    "client": "npm run dev -w client",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donrestarone/mern_ready_to_go.git"
+    "url": "git+ssh://git@github.com/donrestarone/mern_ready_to_go.git"
   },
   "keywords": [
     "MERN",
@@ -25,8 +24,12 @@
     "url": "https://github.com/donrestarone/mern_ready_to_go/issues"
   },
   "homepage": "https://github.com/donrestarone/mern_ready_to_go#readme",
-  "workspaces": ["server", "client"],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "nodemon": "^3.1.4"
   }
 }
